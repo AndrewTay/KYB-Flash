@@ -3,7 +3,9 @@ Go from data input to JSON + CSV in minutes
 
 # KYB API Batch Processing Script
 
-This Node.js script automates the process of running a Postman collection for KYB (Know Your Business) verification against a list of businesses in a CSV file. It uses Newman to execute the API requests, then parses the JSON responses to generate a clean, consolidated CSV report. You also get a compiled JSON file containing the actual API response from the KYB endpoint.
+The Node.js script automates the process of running a Postman collection for KYB (Know Your Business) verification against a list of businesses in a CSV file. It uses Newman to execute the API requests, then parses the JSON responses to generate a clean, consolidated CSV report. You also get a compiled JSON file containing the actual API response from the KYB endpoint.
+
+The shell script allows you to download KYB reports programmatically to share with customers.
 
 ## Features
 
