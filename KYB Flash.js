@@ -8,7 +8,7 @@ const COLLECTION_FILE = 'KYBBatchRun.postman_collection.json'; //postman_collect
 const DATA_FILE = 'Data.csv'; // csv header should match the variable in postman_collection
 const OUTPUT_FILE = 'Business_Verification_Results.csv';
 const INTERMEDIATE_JSON_FILE = 'cleaned_api_responses.json'; // For raw json output
-const NEWMAN_ITERATIONS = 50; // Set number according to number of records to run
+const NEWMAN_ITERATIONS = 20; // Set number according to number of records to run
 
 /**
  * =============================================================================
@@ -35,7 +35,6 @@ newman.run({
         // Pass the summary object to the next step.
         const cleanedResponses = cleanNewmanResults(summary);
 
-        // --- TROUBLESHOOTING STEP ADDED ---
         // Save the cleaned JSON data to a file so we can inspect it.
         console.log(`Saving intermediate JSON file to: ${INTERMEDIATE_JSON_FILE}`);
         fs.writeFileSync(INTERMEDIATE_JSON_FILE, JSON.stringify(cleanedResponses, null, 2), 'utf8');
@@ -90,7 +89,6 @@ function cleanNewmanResults(newmanSummary) {
         };
     });
 }
-
 
 /**
  * =============================================================================
