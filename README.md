@@ -73,5 +73,6 @@ node "KYB Flash.js"
 To download the reports, run 
 
 ```sh
+chmod +x download_reports.sh
 ./download_reports.sh
 ```
