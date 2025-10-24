@@ -69,3 +69,9 @@ Once the setup and configuration are complete, run the script from your terminal
 ```sh
 node "KYB Flash.js"
 ```
+
+To download the reports, run 
+
+```sh
+./download_reports.sh
+```
