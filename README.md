@@ -70,7 +70,7 @@ Once the setup and configuration are complete, run the script from your terminal
 node "KYB Flash.js"
 ```
 
-To download the reports, run 
+To download the reports on a mac, run 
 
 ```sh
 chmod +x download_reports.sh
